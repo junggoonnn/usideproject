@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hẹn Film Studio - Chụp Ảnh Cưới Tự Nhiên & Phóng Khoáng</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="#" class="logo">HẸN FILM<span>.</span></a>
+      
+      <nav class="nav-desktop">
+        <a href="#about">Câu Chuyện</a>
+        <a href="#portfolio">Bộ Sưu Tập</a>
+        <a href="#calculator">Tính Chi Phí</a>
+        <a href="#pricing">Bảng Giá</a>
+        <a href="#process">Quy Trình</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a href="#contact" class="btn btn-primary btn-header">Đăng Ký Tư Vấn</a>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">Câu Chuyện</a>
+    <a href="#portfolio" class="mobile-link">Bộ Sưu Tập</a>
+    <a href="#calculator" class="mobile-link">Tính Chi Phí</a>
+    <a href="#pricing" class="mobile-link">Bảng Giá</a>
+    <a href="#process" class="mobile-link">Quy Trình</a>
+    <a href="#faq" class="mobile-link">FAQ</a>
+    <a href="#contact" class="btn btn-accent mobile-link" style="margin-top: 1rem;">Đăng Ký Tư Vấn</a>
+  </div>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <span class="badge">● CHỤP ANH CƯỚI PHÓNG KHÓANG & TỰ NHIÊN</span>
+          <h1>Nơi tình yêu không cần tạo dáng.</h1>
+          <p>Một chuyến đi trải nghiệm, một ngày hẹn hò trọn vẹn và những khung hình đong đầy cảm xúc thực. Hẹn Film đồng hành cùng hai bạn viết nên câu chuyện tình yêu mộc mạc nhất.</p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn btn-accent">Đăng Ký Tư Vấn Miễn Phí</a>
+            <a href="#calculator" class="btn btn-outline">Tính Chi Phí Dự Kiến ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-images">
+          <div class="hero-img-card img-main">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80" alt="Ảnh cưới ngoại cảnh tự nhiên">
+          </div>
+          <div class="hero-img-card img-sub-1">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=500&q=80" alt="Chụp ảnh khoảnh khắc ngày cưới">
+          </div>
+          <div class="hero-img-card img-sub-2">
+            <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=500&q=80" alt="Dâu rể cười hạnh phúc">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portfolio">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">BỘ SƯU TẬP STORYTELLING</span>
+          <h2 class="section-title">Nhật Ký Những Chuyến Đi</h2>
+          <p class="section-desc">Mỗi bộ ảnh là một câu chuyện riêng biệt, không trùng lặp, phản chiếu trọn vẹn cá tính của từng cặp đôi.</p>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Tất Cả (6)</button>
+          <button class="filter-btn" data-filter="dalat">Đà Lạt</button>
+          <button class="filter-btn" data-filter="sea">Hoàng Hôn Biển</button>
+          <button class="filter-btn" data-filter="city">City Walk</button>
+          <button class="filter-btn" data-filter="camping">Camping & Travel</button>
+        </div>
+
+        <div class="film-strip">
+          <div class="film-holes"></div>
+          <div class="gallery-grid" id="galleryGrid">
+          <div class="gallery-item" data-category="dalat">
+            <div class="polaroid-photo">
+              <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=600&q=80" alt="Đà Lạt Sương Mai">
+              <div class="gallery-overlay">
+              <h4>Đà Lạt - Lần Đầu Đón Sương Mai</h4>
+              <p>#NaturalLight #Storytelling</p>
+              <button class="view-btn" onclick="openLightbox('https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=1200&q=80', 'Đà Lạt - Lần Đầu Đón Sương Mai')">Xem Ảnh Lớn ↗</button>
+            </div>
+            </div>
+            <p class="polaroid-caption">Đà Lạt - Lần Đầu Đón Sương Mai</p>
+          </div>
+
+          <div class="gallery-item" data-category="sea">
+            <div class="polaroid-photo">
+              <img src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=600&q=80" alt="Biển Hoàng Hôn">
+              <div class="gallery-overlay">
+              <h4>Phú Quốc - Vũ Điệu Hoàng Hôn</h4>
+              <p>#SunsetBeach #Romantic</p>
+              <button class="view-btn" onclick="openLightbox('https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&w=1200&q=80', 'Phú Quốc - Vũ Điệu Hoàng Hôn')">Xem Ảnh Lớn ↗</button>
+            </div>
+            </div>
+            <p class="polaroid-caption">Phú Quốc - Vũ Điệu Hoàng Hôn</p>
+          </div>
+
+          <div class="gallery-item" data-category="city">
+            <div class="polaroid-photo">
+              <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=600&q=80" alt="Sài Gòn City Walk">
+              <div class="gallery-overlay">
+              <h4>Sài Gòn - Lên Đèn Cùng Nhau</h4>
+              <p>#CityWalk #VintageVibe</p>
+              <button class="view-btn" onclick="openLightbox('https://images.unsplash.com/photo-1522673607200-164d1b6ce486?auto=format&fit=crop&w=1200&q=80', 'Sài Gòn - Lên Đèn Cùng Nhau')">Xem Ảnh Lớn ↗</button>
+            </div>
+            </div>
+            <p class="polaroid-caption">Sài Gòn - Lên Đèn Cùng Nhau</p>
+          </div>
+
+          <div class="gallery-item" data-category="camping">
+            <div class="polaroid-photo">
+              <img src="https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=600&q=80" alt="Glamping Cùng Nhau">
+              <div class="gallery-overlay">
+              <h4>Bảo Lộc - Đêm Đốt Lửa Trại</h4>
+              <p>#Camping #Warmth</p>
+              <button class="view-btn" onclick="openLightbox('https://images.unsplash.com/photo-1469371670807-013ccf25f16a?auto=format&fit=crop&w=1200&q=80', 'Bảo Lộc - Đêm Đốt Lửa Trại')">Xem Ảnh Lớn ↗</button>
+            </div>
+            </div>
+            <p class="polaroid-caption">Bảo Lộc - Đêm Đốt Lửa Trại</p>
+          </div>
+
+          <div class="gallery-item" data-category="dalat">
+            <div class="polaroid-photo">
+              <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=600&q=80" alt="Đồi Thông Đà Lạt">
+              <div class="gallery-overlay">
+              <h4>Đồi Thông - Giữa Khoảng Trời Tự Do</h4>
+              <p>#PineForest #Outdoor</p>
+              <button class="view-btn" onclick="openLightbox('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80', 'Đồi Thông - Giữa Khoảng Trời Tự Do')">Xem Ảnh Lớn ↗</button>
+            </div>
+            </div>
+            <p class="polaroid-caption">Đồi Thông - Giữa Khoảng Trời Tự Do</p>
+          </div>
+
+          <div class="gallery-item" data-category="sea">
+            <div class="polaroid-photo">
+              <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=600&q=80" alt="Bình Minh Trên Biển">
+              <div class="gallery-overlay">
+              <h4>Nha Trang - Bình Minh Ngát Xanh</h4>
+              <p>#OceanBreeze #Candid</p>
+              <button class="view-btn" onclick="openLightbox('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80', 'Nha Trang - Bình Minh Ngát Xanh')">Xem Ảnh Lớn ↗</button>
+            </div>
+            </div>
+            <p class="polaroid-caption">Nha Trang - Bình Minh Ngát Xanh</p>
+          </div>
+          </div>
+          <div class="film-holes"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section calculator-section" id="calculator">
+      <div class="container">
+        <div class="calculator-card">
+          <div class="calc-header text-center">
+            <span class="section-tag">TÍNH NĂNG TƯƠNG TÁC SÁNG TẠO</span>
+            <h2 class="section-title">Bảng Tính Chi Phí Dự Kiến</h2>
+            <p>Tự do lựa chọn các option phù hợp với kế hoạch và ngân sách của hai bạn.</p>
+          </div>
+
+          <div class="calc-body">
+            <div class="calc-group">
+              <label class="calc-label">1. Lựa chọn Địa Điểm Chụp:</label>
+              <div class="radio-options">
+                <label class="radio-card active">
+                  <input type="radio" name="location" value="studio" checked onchange="updateCalculator()">
+                  <span class="radio-title">Studio / Nội Thành</span>
+                  <span class="radio-desc">Tiết kiệm thời gian, di chuyển nhẹ nhàng</span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="location" value="suburb" onchange="updateCalculator()">
+                  <span class="radio-title">Ngoại Cảnh Gần (Đà Lạt/Vũng Tàu)</span>
+                  <span class="radio-desc">Cảnh quan thiên nhiên phóng khoáng trong ngày</span>
+                </label>
+                <label class="radio-card">
+                  <input type="radio" name="location" value="far" onchange="updateCalculator()">
+                  <span class="radio-title">Chuyến Đi Xa / Destination</span>
+                  <span class="radio-desc">Kết hợp chụp ảnh & du lịch trải nghiệm (2N1Đ)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label class="calc-label">2. Số Lượng Trang Phục (Dâu & Rể):</label>
+              <div class="counter-control">
+                <button class="counter-btn" onclick="changeOutfit(-1)">-</button>
+                <span class="counter-value" id="outfitCount">2 Bộ</span>
+                <button class="counter-btn" onclick="changeOutfit(1)">+</button>
+              </div>
+            </div>
+
+            <div class="calc-group">
+              <label class="calc-label">3. Dịch Vụ Mở Rộng Đi Kèm:</label>
+              <div class="checkbox-grid">
+                <label class="checkbox-card">
+                  <input type="checkbox" id="chkMakeup" checked onchange="updateCalculator()">
+                  <span>Makeup & Tóc tận nơi suốt buổi (+1.5M)</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" id="chkVideo" onchange="updateCalculator()">
+                  <span>Quay Video Short/Reels Hậu Trường (+2.5M)</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" id="chkAlbum" checked onchange="updateCalculator()">
+                  <span>Nâng cấp Album Khổ Lớn 30x30 Premium (+1.0M)</span>
+                </label>
+                <label class="checkbox-card">
+                  <input type="checkbox" id="chkCar" onchange="updateCalculator()">
+                  <span>Xe 7 chỗ di chuyển trọn gói ngày chụp (+1.5M)</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="calc-result">
+              <div class="result-text">
+                <span>TỔNG CHI PHÍ ƯỚC TÍNH:</span>
+                <div class="total-price" id="totalPriceDisplay">9.500.000 VNĐ</div>
+              </div>
+              <button class="btn btn-accent" onclick="applyConfigToForm()">Giữ Cấu Hình Này & Đăng Ký Tư Vấn ↓</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">MINH BẠCH & RÕ RÀNG</span>
+          <h2 class="section-title">Các Gói Dịch Vụ Cố Định</h2>
+          <p class="section-desc">Không chi phí ẩn, bao trọn gói quyền lợi để dâu rể hoàn toàn yên tâm.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="card-badge">Cơ Bản</div>
+            <h3 class="plan-name">DAYDREAM</h3>
+            <p class="plan-desc">Phù hợp chụp nhẹ nhàng tại Studio hoặc không gian nội thành.</p>
+            <div class="plan-price">9.500.000 <span>VNĐ</span></div>
+            <ul class="plan-features">
+              <li>1 Buổi chụp (4 tiếng) tại Studio/Nội thành</li>
+              <li>2 Trang phục Dâu Rể tự chọn</li>
+              <li>Trang điểm & Làm tóc 1 concept</li>
+              <li>1 Album 20x30 cm (20 trang)</li>
+              <li>Trả toàn bộ File gốc chỉnh màu</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline full-width">Chọn Gói Daydream</a>
+          </div>
+
+          <div class="pricing-card featured">
+            <div class="card-badge highlight">Được Ưa Chuộng Nhất</div>
+            <h3 class="plan-name">WANDERLUST</h3>
+            <p class="plan-desc">Dành cho cặp đôi yêu thích ngoại cảnh & tự do thể hiện cảm xúc.</p>
+            <div class="plan-price">16.800.000 <span>VNĐ</span></div>
+            <ul class="plan-features">
+              <li>1 Ngày chụp Ngoại cảnh (Đà Lạt/Biển)</li>
+              <li>3 Trang phục + Trang điểm theo đoàn</li>
+              <li>1 Album 30x30 cm Premium (30 trang)</li>
+              <li>02 Ảnh cổng ép gỗ cao cấp (60x90)</li>
+              <li>Tặng 01 Video Short Reels hậu trường</li>
+              <li>Bao xe di chuyển trong ngày chụp</li>
+            </ul>
+            <a href="#contact" class="btn btn-accent full-width">Chọn Gói Wanderlust</a>
+          </div>
+
+          <div class="pricing-card">
+            <div class="card-badge">Trọn Gói</div>
+            <h3 class="plan-name">ALL-IN JOURNEY</h3>
+            <p class="plan-desc">Giải pháp toàn diện từ ngày chụp album đến ngày tổ chức lễ cưới.</p>
+            <div class="plan-price">24.500.000 <span>VNĐ</span></div>
+            <ul class="plan-features">
+              <li>Chụp ngoại cảnh + Chụp tiệc ngày cưới</li>
+              <li>Váy cưới & Suit thiết kế cao cấp ngày cưới</li>
+              <li>2 Album + 2 Ảnh cổng + Photobook ký tên</li>
+              <li>Đội ngũ 4 người (Photo, Cam, Makeup, Sub)</li>
+              <li>Bao trọn gói vé vào cổng & di chuyển</li>
+            </ul>
+            <a href="#contact" class="btn btn-outline full-width">Chọn Gói All-In</a>
+          </div>
+
+          <!-- Gói 4: Custom -->
+          <div class="pricing-card custom-card">
+            <div class="card-badge">Linh Hoạt</div>
+            <h3 class="plan-name">CUSTOM TAILORED</h3>
+            <p class="plan-desc">Thiết kế lịch trình & ngân sách riêng theo ý tưởng độc bản của bạn.</p>
+            <div class="plan-price" style="font-size: 1.5rem;">Chi Phí Linh Hoạt</div>
+            <ul class="plan-features">
+              <li>Tự chọn địa điểm & số ngày quay chụp</li>
+              <li>Lên ý tưởng Moodboard concept riêng</li>
+              <li>Tùy chỉnh trang phục & phụ kiện độc đáo</li>
+              <li>Phù hợp cưới Destination / Chuyến đi xa</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary full-width">Tư Vấn Gói Riêng</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process-section" id="process">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">QUY TRÌNH LÀM VIỆC</span>
+          <h2 class="section-title">Thoải Mái Như Một Buổi Hẹn Hò</h2>
+          <p class="section-desc">Lo lắng về việc không biết tạo dáng? Hẹn Film có quy trình giúp bạn hoàn toàn tự nhiên.</p>
+        </div>
+
+        <div class="process-steps">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h4>Trò Chuyện & Concept</h4>
+            <p>Lắng nghe câu chuyện tình yêu, sở thích để lên Moodboard trang phục & góc máy riêng.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h4>Thử Đồ & Makeup</h4>
+            <p>Thử các mẫu trang phục nhẹ nhàng, tinh tế và tư vấn tone makeup tôn vinh nét đẹp tự nhiên.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h4>Ngày Bấm Máy</h4>
+            <p>Chuyến đi chơi vui vẻ! Ekip tạo không khí thoải mái, nắm bắt những khoảnh khắc vô tình nhất.</p>
+          </div>
+          <div class="step-card">
+            <div class="step-num">04</div>
+            <h4>Nhận Sản Phẩm</h4>
+            <p>Nhận file gốc chỉnh màu sau 24h & Album in ấn chỉn chu hoàn thiện trong 10-12 ngày.</p>
+          </div>
+        </div>
+
+        <div class="testimonial-box">
+          <div class="testimonial-card text-center">
+            <p class="review-text">"Tụi mình vốn rất ngại trước ống kính, nhưng đi chụp với Hẹn Film giống như đi picnic vậy. Ekip siêu nhiệt tình, cứ bảo hai đứa cứ nói chuyện vui vẻ đi rồi canh góc chụp. Lúc nhận file ảnh mà bất ngờ vì khoảnh khắc nào cũng tự nhiên & tình cảm vô cùng!"</p>
+            <div class="reviewer-info">
+              <strong>Minh Triết & Khánh Linh</strong>
+              <span>Chụp Ngoại Cảnh Đà Lạt - Tháng 08/2026</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">GIẢI ĐÁP THẮC MẮC</span>
+          <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+        </div>
+
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Studio có hỗ trợ dâu rể chưa từng biết tạo dáng không?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Hoàn toàn có! 90% khách hàng của Hẹn Film đều là người lần đầu chụp ảnh chuyên nghiệp. Ekip sẽ hướng dẫn bạn thông qua các hoạt động tương tác tự nhiên thay vì bắt bạn ép dáng cứng nhắc.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Nên book lịch chụp trước thời gian cưới bao lâu?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Thời gian lý tưởng nhất là trước ngày cưới từ 1.5 đến 2 tháng. Điều này giúp dâu rể có thong thả thời gian chọn ảnh, chỉnh sửa album và xử lý các sản phẩm in ấn một cách hoàn hảo nhất.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Nếu ngày chụp gặp thời tiết xấu (mưa) thì xử lý thế nào?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              <p>Hẹn Film luôn theo dõi dự báo thời tiết trước 3 ngày. Nếu thời tiết không thuận lợi, chúng ta có thể linh hoạt chuyển sang góc chụp indoor/cafe ẩm cúng, hoặc hỗ trợ dời lịch chụp sang ngày gần nhất hoàn toàn miễn phí.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tag" style="color: var(--secondary);">LIÊN HỆ TRỰC TIẾP</span>
+            <h2>Hãy Để Hẹn Film Cùng Bạn Lên Kế Hoạch.</h2>
+            <p>Gửi thông tin cho chúng mình hoặc ghé chơi studio để cùng uống trà và trò chuyện về ngày trọng đại nhé.</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <strong>📍 Địa chỉ Studio:</strong>
+                <span>123 Đường Nguyễn Trãi, Phường Bến Thành, Quận 1, TP.HCM</span>
+              </div>
+              <div class="info-item">
+                <strong>📞 Hotline / Zalo:</strong>
+                <span>0909 123 456 (Tư vấn 24/7)</span>
+              </div>
+              <div class="info-item">
+                <strong>✉️ Email:</strong>
+                <span>hello@henfilmstudio.vn</span>
+              </div>
+              <div class="info-item">
+                <strong>⏰ Giờ làm việc:</strong>
+                <span>09:00 - 21:00 (Tất cả các ngày trong tuần)</span>
+              </div>
+            </div>
+
+            <div class="direct-btns">
+              <a href="https://zalo.me" target="_blank" class="btn btn-primary" style="background: #0068FF; border: none;">Chat Zalo Trực Tiếp</a>
+              <a href="tel:0909123456" class="btn btn-outline" style="color: white; border-color: white;">Gọi Hotline</a>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <h3>Đăng Ký Nhận Báo Giá & Tư Vấn</h3>
+            <p style="margin-bottom: 1.5rem; color: #666; font-size: 0.9rem;">Điền thông tin bên dưới, Hẹn Film sẽ liên hệ lại trong vòng 30 phút.</p>
+
+            <form id="bookingForm" onsubmit="handleFormSubmit(event)">
+              <div class="form-group">
+                <label>Họ và tên Dâu & Rể *</label>
+                <input type="text" required placeholder="Ví dụ: Minh Triết & Khánh Linh">
+              </div>
+
+              <div class="form-group">
+                <label>Số điện thoại / Zalo *</label>
+                <input type="tel" required placeholder="090x xxx xxx">
+              </div>
+
+              <div class="form-group">
+                <label>Gói dịch vụ hoặc nhu cầu quan tâm</label>
+                <select id="formPackageSelect">
+                  <option value="Gói Wanderlust (Best Seller)">Gói Wanderlust - Ngoại Cảnh (16.8M)</option>
+                  <option value="Gói Daydream (Studio)">Gói Daydream - Studio (9.5M)</option>
+                  <option value="Gói All-In Journey">Gói All-In Journey (24.5M)</option>
+                  <option value="Gói Custom Thiết Kế Riêng">Gói Custom Thiết Kế Riêng</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label>Ghi chú hoặc Ý tưởng riêng (Nếu có)</label>
+                <textarea id="formNotes" rows="3" placeholder="Chia sẻ thêm về địa điểm mong muốn, ngày dự định chụp..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-accent full-width" style="padding: 1rem;">GỬI YÊU CẦU TƯ VẤN & NHẬN ƯU ĐÃI</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container text-center">
+      <p style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 0.5rem;">HẸN FILM STUDIO</p>
+      <p style="font-size: 0.85rem; color: #aaa;">© 2026 Hẹn Film Studio. All rights reserved. Chụp ảnh cưới tự nhiên & phóng khoáng.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-sticky-bar">
+    <a href="https://zalo.me" class="btn-sticky zalo">
+      <span>Chat Zalo</span>
+    </a>
+    <a href="#contact" class="btn-sticky book">
+      <span>Đăng Ký Tư Vấn</span>
+    </a>
+  </div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+    <div class="lightbox-content">
+      <img src="" id="lightboxImg" alt="Enlarged Image">
+      <p id="lightboxCaption" style="color: white; margin-top: 1rem; text-align: center;"></p>
+    </div>
+  </div>
+
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    hamburgerBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.mobile-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    function openLightbox(src, caption) {
+      document.getElementById('lightboxImg').src = src;
+      document.getElementById('lightboxCaption').innerText = caption;
+      document.getElementById('lightbox').classList.add('active');
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+
+    let outfitCount = 2;
+
+    function changeOutfit(delta) {
+      outfitCount += delta;
+      if (outfitCount < 1) outfitCount = 1;
+      if (outfitCount > 5) outfitCount = 5;
+      document.getElementById('outfitCount').innerText = outfitCount + ' Bộ';
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      let total = 0;
+
+      const locationVal = document.querySelector('input[name="location"]:checked').value;
+      if (locationVal === 'studio') total += 7500000;
+      if (locationVal === 'suburb') total += 12500000;
+      if (locationVal === 'far') total += 18500000;
+
+      total += (outfitCount - 1) * 1000000;
+
+      // Checkboxes
+      if (document.getElementById('chkMakeup').checked) total += 1500000;
+      if (document.getElementById('chkVideo').checked) total += 2500000;
+      if (document.getElementById('chkAlbum').checked) total += 1000000;
+      if (document.getElementById('chkCar').checked) total += 1500000;
+
+      const formatted = new Intl.NumberFormat('vi-VN').format(total) + ' VNĐ';
+      document.getElementById('totalPriceDisplay').innerText = formatted;
+    }
+
+    function applyConfigToForm() {
+      const locationText = document.querySelector('input[name="location"]:checked').parentElement.querySelector('.radio-title').innerText;
+      const priceText = document.getElementById('totalPriceDisplay').innerText;
+      
+      const noteText = `[Cấu hình đã chọn từ Bảng tính]:\n- Địa điểm: ${locationText}\n- Số trang phục: ${outfitCount} bộ\n- Tổng dự toán: ${priceText}`;
+      
+      document.getElementById('formNotes').value = noteText;
+      document.getElementById('formPackageSelect').value = 'Gói Custom Thiết Kế Riêng';
+      document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function toggleFaq(btn) {
+      const faqItem = btn.parentElement;
+      faqItem.classList.toggle('active');
+      const icon = btn.querySelector('.faq-icon');
+      icon.innerText = faqItem.classList.contains('active') ? '−' : '+';
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      alert('Cảm ơn bạn đã đăng ký! Hẹn Film Studio sẽ liên hệ tư vấn trực tiếp trong ít phút.');
+      document.getElementById('bookingForm').reset();
+    }
+
+    // Highlight Radio Card selection styling
+    document.querySelectorAll('.radio-card input').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        document.querySelectorAll('.radio-card').forEach(c => c.classList.remove('active'));
+        e.target.parentElement.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
